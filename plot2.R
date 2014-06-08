@@ -5,5 +5,5 @@ datetimeStr <- paste(pwrData$Date, pwrData$Time)
 dateTimeArr <- strptime(datetimeStr, "%d/%m/%Y %H:%M:%S")
 plot(dateTimeArr, pwrData$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 
-dev.copy(png, file="result/Plot2.png")
+dev.copy(png, file="Plot2.png")
 dev.off()
